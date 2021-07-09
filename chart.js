@@ -82,6 +82,7 @@ function buildCharts(sample) {
       x: sample_values,
       y: yticks,
       type:"bar",
+      orientation: "h",
       hovertext: otu_labels 
      }];
     // // 9. Create the layout for the bar chart. 
