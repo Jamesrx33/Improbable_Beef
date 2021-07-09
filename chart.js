@@ -74,8 +74,9 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-     var yticks = otu_ids.slice(0,10).reverse();
+     var yticks = otu_ids.slice(0,10).reverse().map(x => "OTU " + x);
 
+    console.log(yticks)
 
     // // 8. Create the trace for the bar chart. 
      var barData = [{
@@ -87,7 +88,12 @@ function buildCharts(sample) {
      }];
     // // 9. Create the layout for the bar chart. 
      var barLayout = {
-     title: "Top 10 Bacteria Cultures Found"
+     title: "Top 10 Bacteria Cultures Found",
+     yaxis: {
+      tickmode: "array", // If "array", the placement of the ticks is set via `tickvals` and the tick text is `ticktext`.
+      tickvals: yticks,
+      ticktext: [tick => "OTU" + yticks]
+    }
    };
 
    console.log(barData)
