@@ -106,7 +106,6 @@ function buildCharts(sample) {
       x: otu_ids,
       y: sample_values,
       text: otu_labels,
-      type: "bubble",
       mode: "markers",
       hovertext: otu_labels,
       markers: {
