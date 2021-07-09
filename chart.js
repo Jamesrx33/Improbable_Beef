@@ -109,6 +109,7 @@ function buildCharts(sample) {
       hovertext: otu_labels,
       mode: "markers",
       marker: {
+        color: otu_ids,
         colorscale: "Earth",
         size: sample_values
       }
