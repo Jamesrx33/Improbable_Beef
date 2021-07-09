@@ -67,8 +67,8 @@ function buildCharts(sample) {
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     let otu_ids = subject.otu_ids
-    let otu_labels = subject.otu_labels.slice(0,10)
-    let sample_values = subject.sample_values.slice(0,10)
+    let otu_labels = subject.otu_labels.slice(0,10).reverse()
+    let sample_values = subject.sample_values.slice(0,10).reverse()
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
