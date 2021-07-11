@@ -9,6 +9,14 @@ body {
     color: blanchedalmond;
   }
 
-  .row {
-    background-color: lightcyan;
+  #bar {
+    background-color: rgb(224, 255, 247);
+  }
+
+  #gauge {
+    background-color: rgb(224, 248, 255);
+  }
+
+  #bubble{
+    background-color: rgb(255, 250, 224);
   }
