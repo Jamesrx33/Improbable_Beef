@@ -95,7 +95,8 @@ function buildCharts(sample) {
      yaxis: {
       tickmode: "array", // If "array", the placement of the ticks is set via `tickvals` and the tick text is `ticktext`.
       tickvals: yticks,
-      plot_bgcolor: "lightcyan"
+      plot_bgcolor: "lightcyan",
+      paper_bgcolor: "lightcyan"
     }
    };
 
@@ -128,7 +129,8 @@ function buildCharts(sample) {
       xaxis: {title: "OTU ID", automargin: true},
       yaxis: {automargin: true},
       hovermode: 'closest',
-      plot_bgcolor: "lightcyan"
+      plot_bgcolor: "lightcyan",
+      paper_bgcolor: "lightcyan"
     };
 
     // 2.3. Use Plotly to plot the data with the layout.
@@ -160,7 +162,8 @@ function buildCharts(sample) {
     var gaugeLayout = { 
       margin: { t: 25, r: 25, l: 25, b: 25 },
       font: { color: "midnightblue", family: "Arial" },
-      plot_bgcolor: "lightcyan"
+      plot_bgcolor: "lightcyan",
+      paper_bgcolor: "lightcyan"
     };
 
   
