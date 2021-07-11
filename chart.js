@@ -70,8 +70,10 @@ function buildCharts(sample) {
     let otu_labels = subject.otu_labels
     let sample_values = subject.sample_values
 
-    // 3.3 Create a variable that holds the washing frequency.
-    var wFreq = parseFloat(subject.wfreq)
+    // 3.1, 3.2, 3.3 Create a variable that holds the washing frequency.
+    let Meta = data.metadata
+    let filteredMeta = Meta.filter(x => x.id == sample)[0]
+    var wFreq = parseFloat(filteredMeta.wfreq)
 
     // 1.7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
@@ -137,16 +139,16 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       value: wFreq,
-      title: { text: "Belly Button Washing Frequency", font: { size: 24 } },
+      title: { text: "Scrubs per Week"},
       gauge: {
         axis: { range: [0, 10] },
         bar: { color: "black" },
         steps: [
           { range: [0, 2], color: "crimson" },
-          { range: [2, 4], color: "palevioletred" },
-          { range: [4, 6], color: "hotpink" },
-          { range: [6, 8], color: "lightsalmon" },
-          { range: [8, 10], color: "orangered" }
+          { range: [2, 4], color: "pink" },
+          { range: [4, 6], color: "navajowhite" },
+          { range: [6, 8], color: "palegreen" },
+          { range: [8, 10], color: "forestgreen" }
         ],
       }
     }
@@ -155,9 +157,8 @@ function buildCharts(sample) {
     // 3.5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       width: 500,
-      height: 400,
+      height: 250,
       margin: { t: 25, r: 25, l: 25, b: 25 },
-      paper_bgcolor: "lightgoldenrodyellow",
       font: { color: "midnightblue", family: "Arial" }
     };
 
