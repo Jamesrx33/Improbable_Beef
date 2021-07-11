@@ -1,0 +1,9 @@
+body {
+    font-family: "fantasy";
+    color: yellowgreen;
+  }
+  .jumbotron {
+    background-image: url("../images/leRxbsh.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
