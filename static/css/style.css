@@ -1,6 +1,7 @@
 body {
-    font-family: "fantasy";
-    color: yellowgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: yellowgreen;
+    color: whitesmoke;
   }
   .jumbotron {
     background-image: url("../images/leRxbsh.jpg");
