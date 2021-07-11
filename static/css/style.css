@@ -1,10 +1,14 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     background-color: lightcyan;
-    color: black;
   }
   .jumbotron {
     background-image: url("../images/leRxbsh.jpg");
     background-size: 100% 100%;
     text-align: center;
+    color: blanchedalmond;
+  }
+
+  .row {
+    background-color: lightcyan;
   }
