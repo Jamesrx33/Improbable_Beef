@@ -94,7 +94,8 @@ function buildCharts(sample) {
      title: "Top 10 Bacteria Cultures Found",
      yaxis: {
       tickmode: "array", // If "array", the placement of the ticks is set via `tickvals` and the tick text is `ticktext`.
-      tickvals: yticks
+      tickvals: yticks,
+      plot_bgcolor: rgb(224, 255, 247)
     }
    };
 
@@ -126,7 +127,8 @@ function buildCharts(sample) {
       title: "Bacteria Cultures Per Sample",
       xaxis: {title: "OTU ID", automargin: true},
       yaxis: {automargin: true},
-      hovermode: 'closest'
+      hovermode: 'closest',
+      plot_bgcolor: rgb(224, 248, 255)
     };
 
     // 2.3. Use Plotly to plot the data with the layout.
@@ -157,7 +159,8 @@ function buildCharts(sample) {
     // 3.5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       margin: { t: 25, r: 25, l: 25, b: 25 },
-      font: { color: "midnightblue", family: "Arial" }
+      font: { color: "midnightblue", family: "Arial" },
+      plot_bgcolor: rgb(255, 250, 224)
     };
 
   

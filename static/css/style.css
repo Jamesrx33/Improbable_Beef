@@ -6,17 +6,5 @@ body {
     background-image: url("../images/leRxbsh.jpg");
     background-size: 100% 100%;
     text-align: center;
-    color: blanchedalmond;
-  }
-
-  #bar {
-    background-color: rgb(224, 255, 247);
-  }
-
-  #gauge {
-    background-color: rgb(224, 248, 255);
-  }
-
-  #bubble{
-    background-color: rgb(255, 250, 224);
+    color: maroon;
   }
