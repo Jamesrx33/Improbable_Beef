@@ -139,7 +139,7 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       value: wFreq,
-      title: { text: "Scrubs per Week"},
+      title: { text: "Belly Button Washing Frequency"},
       gauge: {
         axis: { range: [0, 10] },
         bar: { color: "black" },
